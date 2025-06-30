@@ -1,0 +1,134 @@
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image:url('https://suitelife.com/wp-content/uploads/2017/12/empty-cinema.jpg');
+      background-size: cover;
+    }
+
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      position: relative;
+    }
+
+    h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.6rem;
+    }
+
+    p {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+      width: 90%;
+      padding: 0.9rem 2.5rem 0.9rem 0.9rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .checkbox-container input {
+      margin-right: 0.5rem;
+    }
+
+    .checkbox-container label {
+      font-size: 0.9rem;
+    }
+
+    .checkbox-container label span {
+      color: red;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .signin-link {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .signin-link a {
+      color: red;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      background: #c62828;
+      color: white;
+      border: none;
+      padding: 0.9rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background: #a91e1e;
+    }
+
+    pre {
+      margin-top: 1rem;
+      background: #eee;
+      padding: 0.5rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      overflow-x: auto;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: 100%;
+        border-radius: 0px;
+        padding: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      body {
+        margin: 0;
+        justify-content: start;
+        align-items: start;
+      }
+    }
+  

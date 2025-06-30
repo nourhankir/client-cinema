@@ -1,0 +1,70 @@
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .screen {
+      background: #ddd;
+      padding: 0.5rem;
+      text-align: center;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    .seats {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 0.5rem;
+      justify-content: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .seat {
+      background: #ccc;
+      border-radius: 5px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+    }
+
+    .seat.taken {
+      background: #444;
+      cursor: not-allowed;
+    }
+
+    .seat.selected {
+      background: #FF3B30;
+      color: white;
+    }
+
+    .summary {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    #continueBtn {
+      display: block;
+      margin: 1.5rem auto 0;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background: #ccc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: not-allowed;
+    }
+
+    #continueBtn.enabled {
+      background: #FF3B30;
+      cursor: pointer;
+    }

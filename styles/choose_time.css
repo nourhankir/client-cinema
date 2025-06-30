@@ -1,0 +1,146 @@
+
+    :root {
+      --primary: #FF3B30;
+      --light-bg: #f9f9f9;
+      --white: #fff;
+      --shadow: 0 4px 12px rgba(0,0,0,0.1);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background: var(--light-bg);
+      color: #333;
+      
+    }
+
+    .movie-header {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      background: var(--white);
+      padding: 1rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      justify-content: center;
+    }
+
+    .movie-header img {
+      width: 300px;
+      height: 20vh;
+      border-radius: var(--radius);
+      object-fit: cover;
+      margin: auto;
+
+    }
+
+    .movie-header h1 {
+      font-size: 1.5rem;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 1rem;
+    }
+
+    .date-picker {
+      display: flex;
+      gap: 0.5rem;
+      padding: 1rem 0;
+      overflow-x: auto;
+    }
+
+    .date-btn {
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--primary);
+      background: white;
+      color: var(--primary);
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .date-btn.active,
+    .date-btn:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    .auditorium-group {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-top: 1rem;
+      padding: 1rem;
+    }
+
+    .auditorium-header {
+      display: flex;
+      
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .showtime-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .showtime-btn {
+      padding: 0.5rem 1rem;
+      border: 1px solid #bbb;
+      background: #f2f2f2;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .showtime-btn:hover {
+      background: #ddd;
+    }
+
+    .showtime-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+    .auditoriums-Container{
+      width: 30vw;
+      
+    }
+    
+
+    #continueBtn {
+      margin-top: 2rem;
+      padding: 1rem;
+      font-size: 1rem;
+      background: #ccc;
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      min-width: 300px;
+      cursor: not-allowed;
+      transition: 0.3s;
+    }
+
+    #continueBtn.enabled {
+      background: var(--primary);
+      cursor: pointer;
+    }
+    .movie-header{
+      display: flex;
+      flex-direction: column;
+    }
+    
+  

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment – Smart Cinema</title>
+  <link rel="sylesheet" href="../styles/payment.css">
+ 
+</head>
+<body>
+  <h2>Complete Your Payment</h2>
+
+  <div class="section">
+    <label>Choose Payment Method:</label>
+    <div class="payment-methods">
+      <button type="button" data-method="OMT">OMT</button>
+      <button type="button" data-method="Wish">Wish</button>
+      <button type="button" data-method="Touch">Touch</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <label for="coupon">Have a coupon code?</label>
+    <input type="text" id="coupon" placeholder="Enter coupon code (optional)" />
+    <button id="applyCouponBtn">Apply Coupon</button>
+    <div id="couponFeedback" style="margin-top: 0.5rem;"></div>
+  </div>
+
+  <div class="section">
+    <label for="card">Enter Card Number:</label>
+    <input type="text" id="card" placeholder="1234 5678 9012 3456" />
+  </div>
+
+  <div class="price-line">Total to Pay: $<span id="totalPrice">0.00</span></div>
+
+  <button id="confirmBtn" disabled>Confirm Payment</button>
+  <div id="successModal">
+  <div class="success-container">
+    <div style="font-size:40px; color:#FF3B30;">✅</div>
+    <h3 style="margin-top:1rem;">Tickets Successfully Booked!</h3>
+    <p>You're all set for an amazing movie experience!</p>
+    <button class='ticket-btn' onclick="window.location.href='ticket.html'" >View My Ticket</button>
+    <br><br>
+    <button class='home-btn' onclick="window.location.href='home.html'" >Back to Home</button>
+  </div>
+</div>
+
+
+
+  <script src="../scripts/payment.js"></script>
+</body>
+</html>
+
+

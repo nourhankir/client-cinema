@@ -1,0 +1,145 @@
+
+    :root {
+      --bg-color: #E5E5E5;
+      --card-bg: #FFFFFF;
+      --text-color: #333333;
+      --secondary: #777777;
+      --primary: #FF3B30;
+      --input-bg: #FFFFFF;
+      --input-border: #CCCCCC;
+      --error-color: #D9534F;
+      --radius: 8px;
+      --transition: 0.3s;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-image: url('https://www.cameronhouse.co.uk/content/uploads/2024/03/camern-house-cinema.jpg');
+      background-size: cover;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .form-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      height: 70%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+      color: var(--text-color);
+    }
+
+    p.subtitle {
+      margin-bottom: 2rem;
+      color: var(--secondary);
+      font-size: 0.95rem;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 0.75rem 1rem 0.75rem 2.5rem;
+      border: 1px solid var(--input-border);
+      border-radius: var(--radius);
+      background: var(--input-bg);
+      font-size: 1rem;
+      transition: border var(--transition);
+    }
+
+    .input-group input:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .btn-primary {
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--primary);
+      color: #FFF;
+      font-size: 1rem;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: opacity var(--transition);
+      margin-top: 20%;
+    }
+
+    .btn-primary:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .error-list {
+      list-style: none;
+      margin-bottom: 1rem;
+      color: var(--error-color);
+      font-size: 0.9rem;
+    }
+
+    .success {
+      color: green;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      font-size: 1rem;
+      color: var(--secondary);
+    }
+
+    @media (max-width: 480px) {
+      .form-card {
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.25rem;
+      }
+
+      .btn-primary {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+      }
+
+      .input-group input {
+        font-size: 0.9rem;
+      }
+
+      p.subtitle {
+        font-size: 0.9rem;
+      }
+    }
+  

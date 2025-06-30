@@ -1,0 +1,119 @@
+
+    body {
+      font-family: sans-serif;
+      padding: 1rem;
+      background: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+    }
+    .section {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      width: 50%;
+      margin: 1em auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .payment-methods {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .payment-methods button {
+      padding: 0.5rem 1rem;
+      border: 1px solid #FF3B30;
+      background: white;
+      color: #FF3B30;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .payment-methods button.selected {
+      background: #FF3B30;
+      color: white;
+    }
+    #confirmBtn {
+      width: 50%;
+      display: block;
+      margin:auto;
+      
+      padding: 0.75rem;
+      background: #FF3B30;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: not-allowed;
+      margin:auto;
+      margin-top: 1em;
+    }
+    #confirmBtn.enabled {
+      background: #FF3B30;
+      cursor: pointer;
+    }
+    .price-line {
+      text-align: right;
+      font-weight: bold;
+      width:50%;
+      margin:  auto;
+      
+    }
+    @media (max-width: 400px) {
+      .section {
+        width: 90%;
+      }
+      .payment-methods {
+        flex-direction: column;
+      }
+      .payment-methods button {
+        width: 100%;
+      }
+    }
+    #successModal {
+      display:none; 
+      position:fixed; 
+      top:0; 
+      left:0; 
+      width:100%; 
+      height:100%; 
+      background:rgba(0,0,0,0.5); 
+      z-index:999; 
+      justify-content:center; 
+      align-items:center;
+    }
+    .success-container {
+      background:white; 
+      padding:2rem; 
+      border-radius:15px; 
+      text-align:center; 
+      width:300px; 
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    }
+    .ticket-btn {
+      margin-top:1rem; 
+      background:#FF3B30; 
+      color:white; 
+      border:none; 
+      padding:0.5rem 1rem; 
+      border-radius:5px;
+    }
+    .home-btn {
+      background:#f0f0f0; 
+      border:none; 
+      padding:0.5rem 1rem; 
+      border-radius:5px;
+    }
+
+  
