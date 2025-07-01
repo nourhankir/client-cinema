@@ -88,11 +88,11 @@
       if (data.success) {
         
          document.getElementById('successModal').style.display = 'flex';
-        // Optionally clear localStorage and redirect
+        
         
         
       } else {
-        alert('❌ Payment failed: ' + data.error);
+        alert(' Payment failed: ' + data.error);
       }
     });
 };
