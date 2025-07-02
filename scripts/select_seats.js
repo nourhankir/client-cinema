@@ -14,8 +14,8 @@
         data.forEach(seat => {
           const div = document.createElement('div');
           div.className = 'seat';
-          div.textContent = seat.name;
-          seatNames[seat.id] = seat.name;
+          div.textContent = seat.seat_code;
+          seatNames[seat.id] = seat.seat_code;
 
           if (seat.is_booked) {
             div.classList.add('taken');
@@ -38,12 +38,19 @@
 
           grid.appendChild(div);
         });
+      
       });
 
     function updateSummary() {
       const count = selectedSeats.size;
       const total = count * parseFloat(showtime.price);
-      const names = Array.from(selectedSeats).map(id => seatNames[id]).join(', ') || 'None';
+      /*const names = Array.from(selectedSeats).map(id => seatNames[id]).join(', ') || 'None';*/
+      const names = Array.from(selectedSeats).map(id => {
+  console.log("Looking up seatNames for id:", id, "->", seatNames[id]);
+  return seatNames[id] || '?';
+}).join(', ') || 'None';
+
+      
 
       selectedEl.textContent = `Selected: ${names}`;
       totalPriceEl.textContent = `Total: $${total.toFixed(2)}`;
